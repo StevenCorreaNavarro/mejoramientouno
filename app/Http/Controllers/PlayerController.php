@@ -22,6 +22,7 @@ class PlayerController extends Controller
 
     public function store(Request $request)
     {
+        
         $player = new Player(); //lo verde es el nombre del modelo y creo una variable $player
         $player->codigo = $request->codigo; //aca va los atributos como coloco en la migracion 
         $player->nombre = $request->nombre;
