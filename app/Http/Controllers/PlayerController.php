@@ -13,7 +13,6 @@ class PlayerController extends Controller
         return view('jugadores.listar', compact('players')); //view va el nombre de la carpeta.y el nombre del documento de listar
     }    //y ese compact va en plural BOOKs
 
-
     public function create()
     {
         $players = Player::orderBy('id', 'desc')->get();
@@ -22,7 +21,6 @@ class PlayerController extends Controller
 
     public function store(Request $request)
     {
-        
         $player = new Player(); //lo verde es el nombre del modelo y creo una variable $player
         $player->codigo = $request->codigo; //aca va los atributos como coloco en la migracion 
         $player->nombre = $request->nombre;

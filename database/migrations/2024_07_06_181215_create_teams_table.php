@@ -19,22 +19,22 @@ return new class extends Migration
             $table->string('estadio');
             $table->string('aforo');
             $table->string('año');
-             //creacion de tablas foraneas
+
+            //creacion de tablas foraneas
             //  $table->unsignedBigInteger('player_id')->nullable();
             //  $table->foreign('player_id')
             //      ->references('id')
             //      ->on('players')
             //      ->onDelete('cascade')
             //      ->onUpdate('cascade');
-            
             //creamos el campo para albergar la llave foranea
+
             $table->unsignedBigInteger('president_id')->unique();  //unica
             $table->foreign('president_id')
                 ->references('id')
                 ->on('presidents')
                 ->onDelete('cascade')             //get null para no borrar y no funcionar
                 ->onUpdate('cascade');
-
             $table->timestamps();
         });
     }
