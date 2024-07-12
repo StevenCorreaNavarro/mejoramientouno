@@ -52,7 +52,7 @@
                 <td>{{ $team->ciudad}}</td>
                 <td>{{ $team->estadio}} </td>
                 <td>{{ $team->aforo}} </td>
-                <td>{{ $team->Año}} </td>
+                <td>{{ $team->anio}} </td>
                 <td>{{ $team->president_id}} </td>
                 <td><a href="{{ route('team.show', $team->id) }}" style="text-decoration: none">Mostrar</a></td>
                 <td><a href="{{ route('team.edit', $team->id) }}" style="text-decoration: none">Editar</a></td>

@@ -38,7 +38,7 @@
         <label  class="form-label">
             año
             <br>
-            <input class="form-control" type="text" name="año"  class="form-control" required>
+            <input class="form-control" type="text" name="anio"  class="form-control" required>
         </label><br><br>
         <div >
             <h1>presidente</h1>

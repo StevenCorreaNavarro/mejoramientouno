@@ -29,7 +29,8 @@ class TeamController extends Controller
         $team->ciudad = $request->ciudad;
         $team->estadio = $request->estadio;
         $team->aforo = $request->aforo;
-        $team->año = $request->año;
+        $team->anio = $request->anio;
+        
         $team->president_id = $request->president_id;
         $team->save();
         // return $team;
@@ -49,7 +50,8 @@ class TeamController extends Controller
         $team->ciudad = $request->ciudad;
         $team->estadio = $request->estadio;
         $team->aforo = $request->aforo;
-        $team->año = $request->año;
+        $team->anio = $request->anio;
+
         $team->president_id = $request->president_id;
         $team->save();
         return redirect()->route('team.listar'); 

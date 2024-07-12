@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    {{$player}}
+    {{$team}}
     
 </body>
 </html>

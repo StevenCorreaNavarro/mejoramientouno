@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('ciudad');
             $table->string('estadio');
             $table->string('aforo');
-            $table->string('año');
+            $table->string('anio');
 
             //creacion de tablas foraneas
             //  $table->unsignedBigInteger('player_id')->nullable();
