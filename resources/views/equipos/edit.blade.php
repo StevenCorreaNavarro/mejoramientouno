@@ -10,13 +10,13 @@
 <body>
     <h1>Actualizar jugadores</h1>
 
-    <form action="{{ route('player.update', $player) }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('team.update', $team) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('put')
         <label>
             codigo:
             <br>
-            <input type="text" name="codigo" value="{{ old('codigo', $player->codigo) }}">
+            <input type="text" name="codigo" value="{{ old('codigo', $team->codigo) }}">
         </label>
         <br>
         <label>
@@ -27,19 +27,21 @@
         <label>
             fecha nacimiento
             <br>
-            <input type="text" name="fecha_nacimiento" value="{{ old('fecha_nacimiento', $player->fecha_nacimiento) }}">
+            <input type="text" name="estadio" value="{{ old('estadio', $team->estadio) }}">
         </label><br>
         <label>
             posicion
             <br>
-            <input type="text" name="posicion" value="{{ old('posicion', $player->posicion) }}">
+            <input type="text" name="aforo" value="{{ old('aforo', $team->aforo) }}">
         </label>
-
+        <label>
+            posicion
+            <br>
+            <input type="text" name="anio" value="{{ old('anio', $team->anio) }}">
+        </label>
         <br>
-
         <button type="submit">Enviar Formulario:</button>
     </form>
-
 </body>
 
 </html>

@@ -26,5 +26,6 @@ Route::put('equipo/{team}',[TeamController::class,'update'])->name('team.update'
 Route::get('equipo/{team}/editar',[TeamController::class,'edit'])->name('team.edit'); 
 Route::delete('equipo/{team}',[TeamController::class,'destroy'])->name('team.destroy');
 
+
 Route::get('president/integrar', [PresidentController::class, 'asociar']);
 Route::post('presidente/store', [PresidentController::class, 'store'])->name('president.store');

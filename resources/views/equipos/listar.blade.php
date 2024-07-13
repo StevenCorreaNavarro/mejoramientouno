@@ -46,16 +46,18 @@
         </td>
         @foreach ($teams as $team)
             <tr>
-                <td>{{ $team->id }}</td>
-                <td>{{ $team->codigo }}</td>
-                <td>{{ $team->nombre }}</td>
+                <td>{{ $team->id}}</td>
+                <td>{{ $team->codigo}}</td>
+                <td>{{ $team->nombre}}</td>
                 <td>{{ $team->ciudad}}</td>
                 <td>{{ $team->estadio}} </td>
                 <td>{{ $team->aforo}} </td>
                 <td>{{ $team->anio}} </td>
                 <td>{{ $team->president_id}} </td>
+
                 <td><a href="{{ route('team.show', $team->id) }}" style="text-decoration: none">Mostrar</a></td>
                 <td><a href="{{ route('team.edit', $team->id) }}" style="text-decoration: none">Editar</a></td>
+                
                 <td>
                     <form action="{{ route('team.destroy', $team->id) }}" method="POST">
                         @csrf
