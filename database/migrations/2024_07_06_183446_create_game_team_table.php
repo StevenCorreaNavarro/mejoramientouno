@@ -19,11 +19,15 @@ return new class extends Migration
 
             $table->foreign('game_id')
                 ->references('id')
-                ->on('games')->onDelete('cascade');
+                ->on('games')
+                ->onDelete('cascade')
+            ->onUpdate('cascade');
 
             $table->foreign('team_id')
                 ->references('id')
-                ->on('teams')->onDelete('cascade');
+                ->on('teams')
+                ->onDelete('cascade')
+            ->onUpdate('cascade');
             $table->timestamps();
         });
     }
